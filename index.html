@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>MoneyFlow</h1>
+    <p>Monitor Your Moey Correctly</p>
+    <div class="container">
+      <div class="total">
+        <div class="balance">
+          <div class="data">
+            <h2>BALANCE</h2>
+            <p id="balance">₱0.00</p>
+          </div>
+          <div class="simbol peso"><i class="fa-solid fa-peso-sign"></i></div>
+        </div>
+
+        <div class="money">
+          <div class="income">
+            <div class="data">
+              <h4>TOTAL INCOME</h4>
+              <p id="moneyPlus" class="moneyPlus">₱0.00</p>
+            </div>
+            <div class="simbol up">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+          </div>
+
+          <div class="expense">
+            <div class="data">
+              <h4>TOTAL EXPENSES</h4>
+              <p id="moneyMinus" class="moneyMinus">₱0.00</p>
+            </div>
+            <div class="simbol down">
+              <i class="fa-solid fa-arrow-trend-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabo">
+        <div class="layer">
+          <div class="form">
+            <h3>Add New Transaction</h3>
+            <form action="" id="form">
+              <div class="formControl">
+                <label for="text">Description</label>
+                <input
+                  type="text"
+                  placeholder="Enter Description"
+                  id="text"
+                  required
+                />
+              </div>
+
+              <div class="formControl">
+                <div class="highlow">
+                  <button type="button" class="up" id="Income">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    Income
+                  </button>
+                  <button type="button" class="down" id="Expenses">
+                    <i class="fa-solid fa-arrow-trend-down"></i>
+                    Expenses
+                  </button>
+                </div>
+                <label for="amount">Amount</label>
+                <input
+                  type="number"
+                  placeholder="Enter Amount"
+                  id="amount"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn" id="submit">
+                Add Transaction
+              </button>
+            </form>
+          </div>
+
+          <div class="all">
+            <div class="filter" id="filter">
+              <a href="#">All Entries</a>
+              <a href="# ">Income</a>
+              <a href="# ">Expence</a>
+            </div>
+            <ul class="list" id="list">
+              <li>No Transaction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- 
+<div class="simbol">${simbol}</div>${transtion.text}
+    <button class="delete" onclick="removeTransaction(${transtion.id})">x<button> -->
