@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Expenses Traker</title>
+    <link rel="icon" type="image/png" href="piggy-bank-solid-full.svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="logo"><i class="fa-solid fa-piggy-bank"></i></div>
     <h1>MoneyFlow</h1>
     <p>Monitor Your Moey Correctly</p>
     <div class="container">
@@ -79,6 +81,10 @@
                   id="amount"
                   required
                 />
+                <div class="input-group">
+                  <label for="date">Date of Transactiion</label>
+                  <input type="datetime-local" id="date" placeholder=" " />
+                </div>
               </div>
               <button type="submit" class="btn" id="submit">
                 Add Transaction
@@ -88,9 +94,9 @@
 
           <div class="all">
             <div class="filter" id="filter">
-              <a href="#">All Entries</a>
-              <a href="# ">Income</a>
-              <a href="# ">Expence</a>
+              <a href="#" data-filter="all">All Entries</a>
+              <a href="# " data-filter="income">Income</a>
+              <a href="# " data-filter="expense">Expense</a>
             </div>
             <ul class="list" id="list">
               <li>No Transaction</li>
@@ -102,7 +108,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-<!-- 
-<div class="simbol">${simbol}</div>${transtion.text}
-    <button class="delete" onclick="removeTransaction(${transtion.id})">x<button> -->
