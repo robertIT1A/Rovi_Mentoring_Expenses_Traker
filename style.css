@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -10,12 +12,15 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(171deg,rgba(0, 191, 255, 1) 40%, rgba(168, 238, 255, 1) 100%, rgba(255, 54, 54, 1) 51%);
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 .container {
     /* display: grid; */
     /* width: 100vw; */
 }
+.logo {background-color: white; font-size: 50px; padding: 5px;border-radius: 5px;}
 
 .total {
     /* width: auto; */
@@ -133,6 +138,12 @@ input {
     border-radius: 8px;
 }
 
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 /* .btn {
     background: radial-gradient(circle,rgba(166, 78, 153, 1) 0%, rgba(115, 7, 186, 1) 53%);
     border: none;
@@ -188,9 +199,26 @@ input {
 .list {
     margin-top: 20px;
 }
+.list li{
+    display: flex;
+    justify-content: center;
+    padding: 5px; 
+}
 
 .delete {
     font-size: 20px;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border: none;
+}
+
+button {
+    height: 100%;
 }
 
 .highlow {
@@ -220,6 +248,50 @@ input {
 }
 
 li {
-    background-color: #510286;
+    /* background-color: #510286; */
     display: flex;
 }
+.resibo {
+    display: flex;
+    background-color: #5e0e8b;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 1px;
+    border-right: 5px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    gap: 15px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: right;
+    gap: 25px;
+}
+
+.info {color: white;}
+.plus {color: #03fa72; border-color: #03fa72;}
+.minus {color: #ff0000; border-color: #ff0000;}
+
+@media (max-width:768px) {.layer {gap: 1px;}}
+@media (max-width:639px) {.balance {width: 250px;}.money, .money p {font-size: 13px;}.income, .expense {height: 60px;width: 140px;}
+.layer {flex-direction: column;}.form {padding: 15px 15px 15px 15px;margin: 10px;}.btn {display: flex;align-items: center;justify-content: center;width: 330px;}
+.all{margin: 10px;}
+.filter {
+    font-size: 12px;
+}
+
+}
+@media (max-width:375px) {.filter {font-size: 11px;}}
