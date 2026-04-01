@@ -129,6 +129,7 @@ body {
 
 .formControl label {
     font-size: 13px;
+    
 }
 
 input {
@@ -136,6 +137,7 @@ input {
     /* border: none; */
     padding: 6px;
     border-radius: 8px;
+    color: white;
 }
 
 .input-group {
@@ -284,7 +286,6 @@ li {
 .info {color: white;}
 .plus {color: #03fa72; border-color: #03fa72;}
 .minus {color: #ff0000; border-color: #ff0000;}
-.label {color: #fff}
 
 @media (max-width:768px) {.layer {gap: 1px;}}
 @media (max-width:639px) {.balance {width: 250px;}.money, .money p {font-size: 13px;}.income, .expense {height: 60px;width: 140px;}
